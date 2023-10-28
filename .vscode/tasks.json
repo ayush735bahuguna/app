@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"problemMatcher": [
+				"$tsc"
+			],
+			"group": "build",
+			"label": "tsc: build - tsconfig.json"
+		},
+		{
+			"type": "npm",
+			"script": "android",
+			"problemMatcher": [],
+			"label": "npm: android",
+			"detail": "react-native run-android",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
